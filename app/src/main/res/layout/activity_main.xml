@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backLayer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cubicOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="48dp"
+        android:layout_toStartOf="@+id/cubicTwo"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_cube"
+        android:tint="@color/colorCubeOne" />
+
+    <ImageView
+        android:id="@+id/cubicTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cubicThree"
+        android:layout_marginTop="63dp"
+        android:layout_toStartOf="@+id/cubicThree"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_cube"
+        android:tint="@color/colorCubeTwo" />
+
+    <ImageView
+        android:id="@+id/cubicThree"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cubicOne"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_cube"
+        android:tint="@color/colorCubeThree" />
+
+    <ImageView
+        android:id="@+id/diceOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="48dp"
+        android:layout_toStartOf="@+id/cubicTwo"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/diceTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cubicThree"
+        android:layout_marginTop="63dp"
+        android:layout_toStartOf="@+id/cubicThree"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/diceThree"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cubicOne"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="45dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/cubePlus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/cubeMinus"
+        android:layout_marginStart="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_plus" />
+
+    <ImageView
+        android:id="@+id/cubeMinus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_toStartOf="@+id/cubicTwo"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_minus" />
+
+</RelativeLayout>
